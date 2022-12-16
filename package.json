@@ -7,7 +7,7 @@
     "author": "COOLLER",
     "url": "https://kit-code.ru/wp-content/uploads/mcserver/Selvania-Launcher-WEB-Folder",
     "engines": {
-        "node": "^16.x.x"
+        "node": "^18.x.x"
     },
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
