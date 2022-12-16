@@ -1,10 +1,10 @@
 {
-    "name": "kit-code-Launcher",
+    "name": "Kit-code-launcher",
     "preductname": "<kit-code/> Launcher",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": " <kit-code/> Launcher ",
     "main": "src/app.js",
-    "author": "COOLLER ",
+    "author": "lCOOLLERl ",
     "url": "https://kit-code.ru/wp-content/uploads/mcserver/Selvania-Launcher-WEB-Folder",
     "engines": {
         "node": "^16.x.x"
