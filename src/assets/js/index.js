@@ -85,7 +85,7 @@ class Splash {
 
     shutdown(text) {
         this.setStatus(`${text}<br>Выключение через 5 сек...`);
-        let i = 4;
+        let i = 29;
         setInterval(() => {
             this.setStatus(`${text}<br>Выключение ${i--}s`);
             if (i < 0) ipcRenderer.send('update-window-close');

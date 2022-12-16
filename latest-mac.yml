@@ -1,0 +1,11 @@
+version: 1.0.8
+files:
+  - url: kit-code-Launcher-mac-x64.dmg
+    sha512: z2Socths+RE5ptjxPEIdCrbOBa8L21+gDeaxylU4qHFlK666hclbmo0iAGJ2CpDE1s5NMO1KVQdQ61xGGqI2bQ==
+    size: 94980102
+  - url: kit-code-Launcher-mac-arm64.dmg
+    sha512: EocV7fC08q9k3E0d2W8TC9VJRfG4MDZsdgMcXJgZ/TSYlXQxyBKXccJKK1d6Ct2miZFK0PqfOJC+HE/moA3Y1A==
+    size: 92795871
+path: kit-code-Launcher-mac-x64.dmg
+sha512: z2Socths+RE5ptjxPEIdCrbOBa8L21+gDeaxylU4qHFlK666hclbmo0iAGJ2CpDE1s5NMO1KVQdQ61xGGqI2bQ==
+releaseDate: '2022-12-16T12:27:08.830Z'
