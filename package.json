@@ -4,7 +4,7 @@
     "version": "1.0.7",
     "description": "<kit-code/> Launcher",
     "main": "src/app.js",
-    "author": "COOLLER",
+    "author": "COOLLER ",
     "url": "https://kit-code.ru/wp-content/uploads/mcserver/Selvania-Launcher-WEB-Folder",
     "engines": {
         "node": "^18.x.x"
