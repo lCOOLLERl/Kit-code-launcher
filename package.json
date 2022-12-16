@@ -1,8 +1,8 @@
 {
     "name": "kit-code-Launcher",
-    "preductname": "<kit-code/> Launcher",
-    "version": "1.0.6",
-    "description": "<kit-code/> Launcher",
+    "preductname": "<kit-code/> Launcher ",
+    "version": "1.0.7",
+    "description": "<kit-code/> Launcher ",
     "main": "src/app.js",
     "author": "COOLLER",
     "url": "https://kit-code.ru/wp-content/uploads/mcserver/Selvania-Launcher-WEB-Folder",
@@ -31,6 +31,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/cooller1995/-kit-code-Launcher.git"
+        "url": "git+https://github.com/lCOOLLERl/Kit-code-launcher.git"
     }
 }
