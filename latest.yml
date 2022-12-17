@@ -1,8 +1,0 @@
-version: 1.0.8
-files:
-  - url: kit-code-Launcher-win-x64.exe
-    sha512: q9UHn0rKeqWIlHppiZQKf5J/Vf/olfljkWAYFYvSTbDjT8BBLgjoMYkLBV+vvjz5XDh4xSB5DSvHVHAMkfUwLg==
-    size: 89248583
-path: kit-code-Launcher-win-x64.exe
-sha512: q9UHn0rKeqWIlHppiZQKf5J/Vf/olfljkWAYFYvSTbDjT8BBLgjoMYkLBV+vvjz5XDh4xSB5DSvHVHAMkfUwLg==
-releaseDate: '2022-12-16T12:28:54.928Z'

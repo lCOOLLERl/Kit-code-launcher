@@ -1,9 +1,0 @@
-version: 1.0.8
-files:
-  - url: kit-code-Launcher-linux-x86_64.AppImage
-    sha512: 449ONVCsMAefgiH59z7DjeVqX+9lNiRFxK5iH4CL1kffqlQlTFJ1bxU3CAEnEjFO2Zxr2w6NmlB7LMO79C4huQ==
-    size: 84253410
-    blockMapSize: 88822
-path: kit-code-Launcher-linux-x86_64.AppImage
-sha512: 449ONVCsMAefgiH59z7DjeVqX+9lNiRFxK5iH4CL1kffqlQlTFJ1bxU3CAEnEjFO2Zxr2w6NmlB7LMO79C4huQ==
-releaseDate: '2022-12-16T12:29:40.394Z'
