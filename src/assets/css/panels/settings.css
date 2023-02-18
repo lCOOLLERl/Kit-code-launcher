@@ -66,6 +66,13 @@
     color: #F1F1F1;
 }
 
+.information-text {
+    padding: 0px;
+    font: normal normal normal 16px/25px Montserrat;
+    color: #F1F1F1;
+}
+
+
 .title-settings {
     text-align: center;
     font: normal normal bold 20px/25px Montserrat;
@@ -440,6 +447,7 @@
 }
 
 .checkbox-settings+label {
+    float:left;
     display: inline;
     position: relative;
     top: 2px;
