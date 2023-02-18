@@ -1,7 +1,7 @@
 {
     "name": "Kit-code-launcher",
     "preductname": "<kit-code/> Launcher",
-    "version": "1.0.14",
+    "version": "1.0.18",
     "description": " <kit-code/> Launcher ",
     "main": "src/app.js",
     "author": "lCOOLLERl ",
@@ -28,11 +28,9 @@
         "electron": "^20.0.0",
         "electron-builder": "^23.0.3",
         "nodemon": "^2.0.16"
-
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/lCOOLLERl/Kit-code-launcher.git"
-        
     }
 }
