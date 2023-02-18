@@ -1,7 +1,7 @@
 {
     "name": "Kit-code-launcher",
     "preductname": "<kit-code/> Launcher",
-    "version": "1.0.21",
+    "version": "1.0.22",
     "description": " <kit-code/> Launcher ",
     "main": "src/app.js",
     "author": "lCOOLLERl ",
