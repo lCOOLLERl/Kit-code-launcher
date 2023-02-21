@@ -148,3 +148,5 @@ AppData/Launcher/Session Storage/LOG
 AppData/Launcher/WebStorage/QuotaManager
 *.old
 AppData/Launcher/WebStorage/QuotaManager
+AppData/Launcher/Network/Network Persistent State
+AppData/Launcher/WebStorage/QuotaManager
