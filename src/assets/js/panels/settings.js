@@ -10,6 +10,8 @@ const dataDirectory = process.env.APPDATA || (process.platform == 'darwin' ? pro
 
 const os = require('os');
 
+
+
 class Settings {
     static id = "settings";
     async init(config) {
@@ -58,6 +60,10 @@ class Settings {
         document.querySelector('.add-account').addEventListener('click', () => {
             document.querySelector(".cancel-login").style.display = "contents";
             changePanel("login");
+
+        })
+        document.querySelector('.kek').addEventListener('click', () => {
+            open(url33)
         })
     }
 

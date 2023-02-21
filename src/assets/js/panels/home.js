@@ -9,10 +9,22 @@ import { logger, database, changePanel } from '../utils.js';
 
 const { Launch, Status } = require('minecraft-java-core');
 const { ipcRenderer } = require('electron');
+
 const launch = new Launch();
 const pkg = require('../package.json');
 
+
+let shell = require('electron').shell
+document.addEventListener('click', function (event) {
+  if (event.target.tagName === 'A' && event.target.href.startsWith('http')) {
+    event.preventDefault()
+    shell.openExternal(event.target.href)
+  }
+})
+
 const dataDirectory = process.env.APPDATA || (process.platform == 'darwin' ? `${process.env.HOME}/Library/Application Support` : process.env.HOME)
+
+
 
 class Home {
     static id = "home";
@@ -26,26 +38,35 @@ class Home {
         this.initBtn();
     }
 
-    async initNews() {
+
+
+async initNews() {
         let news = document.querySelector('.news-list');
         if (this.news) {
-            if (!this.news.length) {
+            if (!this.news.items.length) {
+                console.log(this.news.items.length);
+                console.log(this.news.items);
+
                 let blockNews = document.createElement('div');
                 blockNews.classList.add('news-block', 'opacity-1');
                 blockNews.innerHTML = `
                     <div class="news-header">
                         <div class="header-text">
-                            <div class="title">Aucun news n'ai actuellement disponible.</div>
+                            <div class="title">На данный момент новостей нет.</div>
                         </div>
                     </div>
                     <div class="news-content">
+
                         <div class="bbWrapper">
-                            <p>Vous pourrez suivre ici toutes les news relative au serveur.</p>
+                            <p>Вы можете следить за всеми новостями, связанными с сервером, здесь.</p>
                         </div>
                     </div>`
                 news.appendChild(blockNews);
             } else {
-                for (let News of this.news) {
+                for (let News of this.news.items) {
+                    console.log(News);
+                    
+
                     let date = await this.getdate(News.publish_date)
                     let blockNews = document.createElement('div');
                     blockNews.classList.add('news-block');
@@ -54,17 +75,25 @@ class Home {
                             <div class="header-text">
                                 <div class="title">${News.title}</div>
                             </div>
-                            <div class="date">
-                                <div class="day">${date.day}</div>
-                                <div class="month">${date.month}</div>
-                            </div>
+
+                            <!-- <div class="date">-->
+                            <!--<div class="day">${News.pubDate}</div>-->
+                            <!--   <div class="month">${News.pubDate}</div>-->
+                            <!-- </div>-->
                         </div>
                         <div class="news-content">
                             <div class="bbWrapper">
-                                <p>${News.content.replace(/\n/g, '</br>')}</p>
-                                <p class="news-author">Auteur,<span> ${News.author}</span></p>
+                                <p>${News.description.replace(/\n/g, '</br>')}</p>
+                                
+                            
+                                
+                                <a href="${News.link}" class="tab-btn-css-link">${News.link_title}</a>
+
+                                <!--<p class="news-author">Автор<span>${News.author}</span></p>-->
                             </div>
                         </div>`
+                       
+                    console.log(News.link);
                     news.appendChild(blockNews);
                 }
             }
@@ -74,15 +103,16 @@ class Home {
             blockNews.innerHTML = `
                 <div class="news-header">
                     <div class="header-text">
-                        <div class="title">Error.</div>
+                        <div class="title">Ошибка.</div>
                     </div>
                 </div>
+                &nbsp;
                 <div class="news-content">
                     <div class="bbWrapper">
-                        <p>Impossible de contacter le serveur des news.</br>Merci de vérifier votre configuration.</p>
+                        <p>Не удалось связаться с сервером новостей.</br>Пожалуйста, проверьте ваши настройки.</p>
                     </div>
                 </div>`
-            // news.appendChild(blockNews);
+             news.appendChild(blockNews);
         }
     }
 

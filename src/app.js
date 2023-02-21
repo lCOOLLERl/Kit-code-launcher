@@ -33,6 +33,28 @@ if (!gotTheLock) {
     });
 }
 
+// Listen for the 'open-url' message
+ipcMain.on('open-url', (event, url) => {
+        
+    // Sanitize and validate the URL to prevent security issues
+    if (isValidUrl(url)) {
+    // Open the URL in the default browser using the shell module
+    shell.openExternal(url);
+    } else {
+    console.error(`Invalid URL: ${url}`);
+    }
+    
+});
+
+// You can use this function to validate the URL
+function isValidUrl(url) {
+    // Implement your URL validation logic here
+    // This is just an example, you might want to use a more strict validation
+    return url.startsWith('http://') || url.startsWith('https://');
+}
+
+
+
 ipcMain.on('update-window-close', () => UpdateWindow.destroyWindow())
 ipcMain.on('update-window-dev-tools', () => UpdateWindow.getWindow().webContents.openDevTools())
 ipcMain.on('main-window-open', () => MainWindow.createWindow())
@@ -50,12 +72,15 @@ ipcMain.on('main-window-maximize', () => {
     }
 })
 
+
 ipcMain.on('main-window-hide', () => MainWindow.getWindow().hide())
 ipcMain.on('main-window-show', () => MainWindow.getWindow().show())
 
 ipcMain.handle('Microsoft-window', async(event, client_id) => {
     return await new Microsoft(client_id).getAuth();
 })
+
+
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit();

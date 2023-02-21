@@ -24,13 +24,18 @@ class Config {
     async GetNews() {
         let rss = await fetch(news);
         if (rss.status === 200) {
+            console.log('200');
             try {
                 let news = await rss.json();
+                console.log(news);
                 return news;
+
             } catch (error) {
+                console.log(error);
                 return false;
             }
         } else {
+            console.log(error);
             return false;
         }
     }
