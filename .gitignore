@@ -125,3 +125,26 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+AppData/Launcher/IndexedDB/file__0.indexeddb.leveldb/LOG
+AppData/Launcher/IndexedDB/file__0.indexeddb.leveldb/LOG.old
+AppData/Launcher/Local Storage/leveldb/LOG
+AppData/Launcher/Local Storage/leveldb/LOG.old
+AppData/Launcher/lockfile
+AppData/Launcher/Network/Cookies
+AppData/Launcher/Service Worker/Database/LOCK
+AppData/Launcher/Service Worker/Database/LOG
+AppData/Launcher/Service Worker/Database/MANIFEST-000001
+AppData/Launcher/Session Storage/LOG
+AppData/Launcher/Session Storage/LOG.old
+AppData/Launcher/WebStorage/QuotaManager
+*.old
+AppData/Launcher/Session Storage/LOG.old
+AppData/Launcher/Network/Cookies
+AppData/Launcher/Local Storage/leveldb/LOG.old
+AppData/Launcher/Local Storage/leveldb/LOG
+AppData/Launcher/IndexedDB/file__0.indexeddb.leveldb/LOG.old
+AppData/Launcher/IndexedDB/file__0.indexeddb.leveldb/LOG
+AppData/Launcher/Session Storage/LOG
+AppData/Launcher/WebStorage/QuotaManager
+*.old
+AppData/Launcher/WebStorage/QuotaManager
