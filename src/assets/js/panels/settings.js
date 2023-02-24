@@ -62,9 +62,7 @@ class Settings {
             changePanel("login");
 
         })
-        document.querySelector('.kek').addEventListener('click', () => {
-            open(url33)
-        })
+        
     }
 
     async initRam() {
